@@ -1,0 +1,17 @@
+﻿@model IEnumerable<MVCapp.Models.UserInfo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+@foreach (var item in Model)
+{
+    <img src="~/images/user.jpg" height="300" width="300" />
+    <h4>@item.FullName</h4>
+    <h5>Address = @item.Address</h5>
+    <h5>Email = @item.Email</h5>
+    <h5>Phone Number = @item.PhoneNumber</h5>
+
+}
